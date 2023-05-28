@@ -8,11 +8,11 @@ export default class ListShoe extends Component {
       handleViewDetail={this.props.handleViewDetail} 
       key={index} 
       data={item}
-      handleBuyShoe={this.props.handleBuy}
+      handleAddToCart={this.props.handleAddToCart}
       ></ItemShoe>;
     });
   };
   render() {
-    return <div className="row">{this.renderListShoe()}</div>;
+    return <div className="row col-6">{this.renderListShoe()}</div>;
   }
 }
